@@ -1,0 +1,56 @@
+@startuml
+
+!theme plain
+
+skinparam linetype ortho
+left to right direction
+
+
+entity "Encounter" as Encounter {
+  <<PK>> encounterid 
+  --
+  locationname 
+  booty 
+  encounterdate 
+  casualties 
+  target 
+  --
+  <<FK>> shipid 
+}
+
+entity "Pirate" as Pirate {
+  <<PK>> pirateid 
+  --
+  firstname 
+  lastname
+  origin 
+  teeth 
+  limbs 
+  --
+  <<FK>> positionid 
+  <<FK>> shipid 
+}
+
+entity "Position" as Position {
+  <<PK>> positionid 
+  --
+  positionname 
+  shareofbooty 
+  reqyrsExp 
+}
+
+entity "Ship" as Ship {
+  <<PK>> shipid 
+  --
+  shipname 
+  maidenyear 
+  portoforigin 
+}
+
+'Encounter }o--|| Ship : " "
+'Pirate }o--|| Position 
+Position ||--o{ Pirate 
+Pirate }o--o| Ship 
+Ship ||--o{ Encounter 
+
+@enduml
