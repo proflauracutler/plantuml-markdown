@@ -1,4 +1,4 @@
-@startuml
+@startuml example
 actor client
 node app
 node car

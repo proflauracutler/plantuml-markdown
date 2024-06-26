@@ -12,7 +12,7 @@ After some research, I found [this great post about PlantUML](https://blog.anoff
 
 Visit the online editor [http://www.plantuml.com/plantuml/uml/](http://www.plantuml.com/plantuml/uml/) and write your UML diagram with code & use a cheat sheet like this: https://ogom.github.io/draw_uml/plantuml/
 
-This project contains an example [example-uml.iuml](example-uml.iuml):
+This project contains an example [uml-diagrams/example-uml.iuml](uml-diagrams/example-uml.iuml):
 
 ```
 @startuml
@@ -34,13 +34,13 @@ There's also [an IntelliJ plugin for PlantUML](https://plugins.jetbrains.com/plu
 This part is simple, yet effective :) Simply use the PlantUML proxy `http://www.plantuml.com/plantuml/proxy` to render your `*.iuml` files and embed them like images:
 
 ```
-![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jonashackt/plantuml-markdown/master/example-uml.iuml)
+![your-UML-diagram-name](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/proflauracutler/plantuml-markdown/master/uml-diagrams/example-uml.iuml)
 ``` 
 
-Use the `RAW` version of your `*.iuml` files like that: [https://raw.githubusercontent.com/jonashackt/plantuml-markdown/master/example-uml.iuml](https://raw.githubusercontent.com/jonashackt/plantuml-markdown/master/example-uml.iuml) and prefix it with `src=`.
+Use the `RAW` version of your `*.iuml` files like that: [https://raw.githubusercontent.com/proflauracutler/plantuml-markdown/master/uml-diagrams/example-uml.iuml](https://raw.githubusercontent.com/proflauracutler/plantuml-markdown/master/uml-diagrams/example-uml.iuml) and prefix it with `src=`.
 
 Also you should use the `cache=no` option so that GitHub always renders the currently committed version of your PlantUML `*.iuml` files.
 
 That's all - simply see the diagram live:
 
-![example-uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jonashackt/plantuml-markdown/master/example-uml.iuml)
+![example-uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/proflauracutler/plantuml-markdown/master/uml-diagrams/example-uml.iuml)
